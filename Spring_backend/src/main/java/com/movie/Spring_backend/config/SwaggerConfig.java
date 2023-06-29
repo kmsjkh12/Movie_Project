@@ -19,9 +19,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.HandlerMethod;
 
 @OpenAPIDefinition(
-        servers = {@Server(url = "https://www.moviebnb.com/APICALL", description = "Backend Server url")},
+        servers = {@Server(url = "https://www.moviepjo.com/APICALL", description = "Backend Server url")},
         info = @Info(title = "영화 웹페이지 API 명세서",
-                contact = @Contact(name="웹페이지 링크", url="https://www.moviebnb.com/"),
+                contact = @Contact(name="웹페이지 링크", url="https://www.moviepjo.com/"),
                 description = "Spring boot와 React를 이용한 영화 웹페이지 API 명세서입니다.\n\n" +
                         "① URL 가운데에 auth가 붙으면 accessToken이 필요해서 로그인 이후 사용가능합니다.\n\n" +
                         "② 쿠키를 기반으로 검증하기 때문에 회원 관련 API에 있는 /Member/normal/login 요청 이후 헤더에 토큰값을 추가할 필요가 없습니다.\n\n" +

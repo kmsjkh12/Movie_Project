@@ -17,7 +17,7 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         // 프론트단에서 호출하는 요청은 모두 허용하고 쿠키도 같이 받아오게함
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("https://www.moviebnb.com");
+        config.addAllowedOrigin("https://www.moviepjo.com");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**",config);
