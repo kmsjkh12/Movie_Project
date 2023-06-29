@@ -11,7 +11,7 @@ export const http = axios.create({
 		'Pragma': 'no-cache',
 		'Expires': '0'
 	},
-  baseURL: "https://www.moviebnb.com/APICALL", // 백엔드 주소
+  baseURL: "https://www.moviepjo.com/APICALL", // 백엔드 주소
 	withCredentials: true
 });
 
