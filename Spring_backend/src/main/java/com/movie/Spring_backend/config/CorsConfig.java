@@ -18,6 +18,8 @@ public class CorsConfig {
         // 프론트단에서 호출하는 요청은 모두 허용하고 쿠키도 같이 받아오게함
         config.setAllowCredentials(true);
         config.addAllowedOrigin("https://www.moviepjo.com");
+	config.addAllowedOrigin("http://52.79.78.98");
+        config.addAllowedOrigin("http://localhost:3000");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**",config);

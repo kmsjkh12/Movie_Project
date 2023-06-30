@@ -18,7 +18,7 @@ services:
       - TZ=Asia/Seoul
     # 이미지 저장을 위한 바인드 마운트
     volumes:
-      - /Users/mok/Desktop/Movie_Project/React_frontend/build/img:/Users/mok/Desktop/Movie_Project/React_frontend/build/img
+      - /home/ubuntu/Movie_Project/React_frontend/build/img:/home/ubuntu/Movie_Project/React_frontend/build/img
   nginx:
     hostname: nginx
     build:
@@ -30,8 +30,9 @@ services:
       - springboot
     # 빌드된 React파일과 https를 위한 key를 바인드 마운트
     volumes:
-      - /Users/mok/Desktop/Movie_Project/React_frontend/build
-      - /etc/letsencrypt/archive/www.moviepjo.com:/keys
+      - /home/ubuntu/Movie_Project/React_frontend/build:/app/build
+      - /etc/letsencrypt/archive/moviepjo.com-0001:/keys
+
 
 # ec2 프리티어 메모리 부족현상으로 인해 리액트 파일을 빌드 못하므로
 # 도커에서 volume을 따로 생성하지 않고 바인드 마운트하여 사용
