@@ -133,12 +133,12 @@ const Details = () => {
                 </strong>
                 <div className="info">
                   <span className="reservation">
-                    예매율&nbsp; {detailMovie.reserveRate ? detailMovie.reserveRate.toFixed(1) : (0.0).toFixed(1)}%
+                    예매율&nbsp; {detailMovie.reserveRate ? parseInt(detailMovie.reserveRate).toFixed(1) : (0.0).toFixed(1)}%
                   </span>
                   <span className="rate">
                     관람객 평점 
                     <StarFilled style={{color :"#fea408", marginLeft: "7px", marginRight: "7px"}}/>
-                    {detailMovie.mscore ? detailMovie.mscore.toFixed(1) : 0.0.toFixed(1)}
+                    {detailMovie.mscore ? parseInt(detailMovie.mscore).toFixed(1) : 0.0.toFixed(1)}
                   </span>
                 </div>
               </Title>
