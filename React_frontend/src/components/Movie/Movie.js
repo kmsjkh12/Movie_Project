@@ -105,7 +105,7 @@ const Movie = ({ movie }) => {
               <TextScore>
                 관람평 : &nbsp;
                 <span>
-                  {movie.mscore ? movie.mscore.toFixed(1) : (0.0).toFixed(1)}
+                  {movie.mscore ? parseInt(movie.mscore).toFixed(1) : (0.0).toFixed(1)}
                 </span>
               </TextScore>
             </Link>
@@ -123,7 +123,7 @@ const Movie = ({ movie }) => {
           </div>
           <div className="infomation">
             <span className="rate">
-              예매율 {movie.reserveRate ? movie.reserveRate.toFixed(1) : (0.0).toFixed(1)}%
+              예매율 {movie.reserveRate ? parseInt(movie.reserveRate).toFixed(1) : (0.0).toFixed(1)}%
             </span>
             <span className="date">개봉일 {movie.mdate}</span>
           </div>
